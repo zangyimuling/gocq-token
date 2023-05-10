@@ -1,0 +1,50 @@
+readme.md
+下载运行 go-cqhttp，选择反向 WebSocket，修改 config.yml，以下为必改项：
+
+uin: 账号
+password: 不用填！
+post-format: array
+universal: ws://localhost:2536/go-cqhttp
+
+
+不提供交流群
+
+
+然后找一下自动生成的device.json
+"protocol"的值改成2(手表协议)，默认是5(iPad)
+像这样："protocol": 2,
+改完再重新运行 扫码登录.bat
+
+
+
+
+
+
+毕竟你连这都看不懂
+那真别用
+
+教程如下
+
+先点击登录
+
+登录成功后
+
+再点击转换
+
+
+把exe程序放到token一起的文件夹里
+意思就是程序会直接检测并转换当前路径的token
+把go-cqhttp的session.token
+直接转换成
+oicq的token
+转换成功后
+如果你要登录oicq
+需要把go-cqhttp的device.json虚拟设备文件
+和转换后的token文件
+放到oicq的设备识别文件夹里
+go-cqhttp的device.json虚拟文件需要改成oicq格式
+就是device-QQ号.json
+看不懂？
+那没办法
+教程就这样
+不懂别玩

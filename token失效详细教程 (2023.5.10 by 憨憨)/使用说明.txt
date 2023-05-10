@@ -1,0 +1,14 @@
+1.下载并加压——“解决icqq@0.3.1弹token过期.zip”
+2.双击打开 请先点击我扫码登录.bat，接着选择3（反向），会自动生成一个config.yml文件，关闭窗口
+3.用记事本或者其他文本编辑器打开config.yml文件，找到并修改下面内容（只需要修改下面这三个即可，其他的不用动）
+uin: 账号
+post-format: array
+universal: ws://localhost:2536/go-cqhttp
+4.再次双击 "请先点击我扫码登录.bat"，会提示扫码，使用机器人QQ扫码（会提示登录失败，是正常情况），扫码之后，关闭窗口
+5.使用记事本打开device.json文件，ctrl + f 进行搜索protocol，将protocol的值从5改到2，(这个device.json是我们要的第一个文件)
+6.再次双击 "请先点击我扫码登录.bat"进行扫码登录，这次就会登录成功，同时会生成gocq的token，关闭窗口
+7.双击"登录成功后点我转换token.exe"文件进行token转换，运行之后发现会多一个"token"文件，(这个token是我们要的第二个文件）
+8.打开云崽的data文件夹（Yunzai-Bot\data）,查看该文件夹下是否有device.json、QQ号_token这两个文件，如果有就删除它们，没有就跳过
+9.上传第5步和第7步获取的两个文件到云崽的data文件夹里，并修改token为"机器人QQ号_token"
+10.修改"Yunzai-Bot\config\config\qq.yaml"文件里面的"platform",修改为3
+11，上面操作完就可以登录了
